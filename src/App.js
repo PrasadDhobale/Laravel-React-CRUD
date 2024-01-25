@@ -6,6 +6,7 @@ import AddUser from './components/Register';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './components/About';
+import NotFound from './components/NotFound';
 
 function App() {
   return (    
@@ -16,7 +17,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/add" element={<AddUser />} />
         <Route path="/about" element={<About />} />
-        
+        <Route path='*' element={<NotFound />} />
       </Routes> 
       
       <footer className="mt-auto">

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Api = axios.create({
-  baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000/api',
+  baseURL: process.env.BASE_URL || 'https://laravel-react-crud.000webhostapp.com/api',
   headers: {
     'Content-Type': 'application/json'
   }
